@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>buat mai onli kacung</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      max-width: 400px;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .heart {
+      font-size: 60px;
+      animation: beat 1s infinite;
+      margin: 20px 0;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      background: #ff4d6d;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff1e4d;
+      transform: scale(1.05);
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>kacung</h1>
+    <p>
+      tau dak aku sayang mampus sama kau, sayang gile
+      <br><strong>walau kau agak hama dikit tapi ak sayang kau 🤭🤭🤭.</strong>
+    </p>
+
+    <div class="heart">❤️</div>
+
+    <p>
+      kadang ni aku mikir ko kau perpek mampus anjiranjiranjir
+      <br>
+      uda perpek, baik, lucu, agak hama ja kayak babi🤭🤭
+    </p>
+
+    <button onclick="alert('aku bakal tetep sayang kau, harini, besok, sampe kapanpun 🤭🤭')">
+      teken ini cung
+    </button>
+  </div>
+
+</body>
+</html>
